@@ -8,7 +8,7 @@ class serviceProductsProcesses {
         const keys = Object.keys(ProductsProcessesData);
         const number = keys.length;
         const ProductsProcessesKeys = Object.keys(ProductsProcesses.schema.obj);
-        if (number != ProductsProcessesKeys.length) {
+        if (number != ProductsProcessesKeys.length - 4) {
             return "Отсутствует поле"
         }
         for (let key in ProductsProcessesData) {
@@ -53,7 +53,7 @@ class serviceProductsProcesses {
         const ProductsProcessesKeys = Object.keys(ProductsProcesses.schema.obj);
         console.log(number);
         console.log(ProductsProcessesKeys.length);
-        if (number - 1 != ProductsProcessesKeys.length) {
+        if (number != ProductsProcessesKeys.length) {
             return "Не заполнены поля"
         }
         return "Успешно"

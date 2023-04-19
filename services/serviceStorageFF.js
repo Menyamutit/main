@@ -25,7 +25,7 @@ class serviceStorageFF {
         return await StorageFF.find();
     }
     // Фильтрация
-    async getStorFF(query) {
+    async getStorageFF(query) {
         const result = await StorageFF.find(query)
         if (!result) {
             return "Не найдено"
@@ -52,7 +52,7 @@ class serviceStorageFF {
         const keys = Object.keys(StorageFFData);
         const number = keys.length;
         const StorageFFKeys = Object.keys(StorageFF.schema.obj);
-        if (number - 1 != StorageFFKeys.length) {
+        if (number != StorageFFKeys.length) {
             return "Не заполнены поля"
         }
         return "Успешно"

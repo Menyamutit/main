@@ -53,7 +53,7 @@ class serviceProducts {
         const keys = Object.keys(ProductsData);
         const number = keys.length;
         const ProductsKeys = Object.keys(Products.schema.obj);
-        if (number - 1 != ProductsKeys.length) {
+        if (number != ProductsKeys.length) {
             return "Не заполнены поля"
         }
         return "Успешно"

@@ -52,7 +52,7 @@ class serviceProcesses {
         const keys = Object.keys(ProcessesData);
         const number = keys.length;
         const ProcessesKeys = Object.keys(Processes.schema.obj);
-        if (number != ProcessesKeys.length - 2) {
+        if (number != ProcessesKeys.length) {
             return "Не заполнены поля"
         }
         return "Успешно"

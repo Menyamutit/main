@@ -62,7 +62,7 @@ class serviceEmployees {
         const keys = Object.keys(EmployeesData);
         const number = keys.length;
         const EmployeesKeys = Object.keys(Employees.schema.obj);
-        if (number -1 != EmployeesKeys.length) {
+        if (number != EmployeesKeys.length) {
             return "Не заполнены поля"
         }
         return "Успешно"

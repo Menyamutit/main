@@ -79,7 +79,7 @@ router.delete("/proces/:id", ProcessesController.delete)
 
 // StorageFF
 router.post("/storageff", StorageFFController.add)
-router.get("/storagemp", StorageFFController.getAll)
+router.get("/storageff", StorageFFController.getAll)
 // router.get('/storageff/empl', StorageFFController.find)
 // router.get('/storageff/accept', StorageFFController.find)
 router.get("/storageff/find?", StorageFFController.getStorageFF)
